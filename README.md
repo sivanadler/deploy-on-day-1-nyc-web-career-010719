@@ -1,8 +1,4 @@
----
-tags: deploy, team, git, pull request
-languages: html, css
-resources:
----
+
 
 # Deploy on Day One
 
@@ -22,13 +18,13 @@ resources:
 
 ## History
 
-Welcome to Flatiron! Every semester, a student index page is created. It looks something like [this](http://students.flatironschool.com/). Links from this page go to individual profiles, which look like [this](http://students.flatironschool.com/students/lauraconwill.html).
+Welcome to Flatiron! Every semester, we create student index pages to help in the process of getting to know each other! An index page looks something like [this](http://students.flatironschool.com/). Links from this page go to individual profiles, which look like [this](http://students.flatironschool.com/students/lauraconwill.html).  You will be making and deploying an index page that contains info for all of the people at your current table.  
 
 ## Assignment
 
 Your assignment is to create a student profile for someone sitting at your table. By the end of this project, every student should have a profile for themselves that was created by someone else and every student should have created a profile for someone else. If you're sitting at a table of four, it might be easiest to pair up. If you're sitting at a table of three, it might be easiest to create the profile of the student clockwise to you. If you're sitting at a...well you get the picture.
 
-Now if you're anything like me, you might be freaking out and wondering, "Am I making a webapp?!?!" The answer is no. You're just working with HTML and file structures. You don't need to know Rails, JavaScript, or even Ruby for this project. No need to freak out. Calm down! Seriously, you're making the rest of us nervous!!!
+Now if you're anything like me, you might be freaking out and wondering, "Am I making a webapp?!?!" Not today — we'll just working with HTML and file structures. You don't need to know Rails, JavaScript, or even Ruby for this project. And your classmates and instructors are here to help!
 
 You'll have about three hours to complete the first section of this lab. Use that time to get to know your table, get familiar with git workflows, and re-familiarizing yourself with HTML. If you feel stuck, ask any instructor for help. **Keep in mind everyone in your table will be pushing to the same repository.**  Think about using a workflow with your teammates that will minimize conflicts.
 
@@ -76,7 +72,7 @@ The structure of this project looks something like this:
 ```
 
 ### Files you will need to alter:
-* The only file you'll alter is `index.html`. 
+* The only file you'll alter is `index.html`.
 
 ### Files you will need to add:
 * Add three pictures to the `img/students` folder (they can be jpg or png files):
@@ -91,8 +87,11 @@ The structure of this project looks something like this:
 * Figure out who is going to write whose profile.
 
 * ![fork](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/fork.png)
-* Have one person at your table [fork](https://help.github.com/articles/fork-a-repo) this repo. This person should then send the link to their fork to everyone sitting at their table.
-* The person who forked the repo must add all team members as collaborators. Learn more about that [here](https://help.github.com/articles/adding-collaborators-to-a-personal-repository/).
+* Have one person at your table [fork](https://help.github.com/articles/fork-a-repo) this repo.
+* Git clone the forked repo to that person's machine. Ensure that your index.html file has the same amount of ```<li></li>``` elements (surrounded by the 'begin student' and 'end student' comments) as you have persons on your team. We have provided four by default, but you should either remove these or copy/paste to reflect the correct amount of people on your team. Assign individuals to specific ```<li></li>``` elements (order matters!).
+* Once the count is accurate, the person who forked the repo must git [add](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Staging-Modified-Files), [commit](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Committing-Your-Changes), and [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to your remote master.
+* Next, the person who forked the repo must add all team members as collaborators. Learn more about that [here](https://help.github.com/articles/adding-collaborators-to-a-personal-repository/).
+* Following, this person should then send the link to their fork to everyone sitting at their table.
 
 * ![clone](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/clone.png)
 * Everyone at the table should then [clone](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository#Cloning-an-Existing-Repository) this forked repo.
@@ -126,11 +125,11 @@ Take a look at `index.html` and `students/student_name.html` in the browser. You
   * For instance, we would add the pictures titled `zoe_perez_background.jpg`, `zoe_perez_index.jpg`, and `zoe_perez_profile.jpg` to the `students` folder that is inside the `img` folder.
   * File endings are case senstive. When adding an \<image\> tag, make sure that the image source is identical to the name of the image file.
 
-* Once you've completed the profile, open up `index.html`. Use the prexisting template as a model and add a section for your fellow student.
+* Once you've completed the profile, open up `index.html`. Use the assigned ```<li></li>``` element as a template and fill it out for your fellow classmate.
 
 #### Stage and Commit Changes
 
-* Once you're happy with the profile you've created and the changes you've made to the index page, type [git status](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files). The the file you've altered, index.html, should appear in the "Tracked Files" section and the files you've created should appear in the "Untracked Files" section. 
+* Once you're happy with the profile you've created and the changes you've made to the index page, type [git status](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Checking-the-Status-of-Your-Files). The file you've altered, index.html, should appear in the "Tracked Files" section and the files you've created should appear in the "Untracked Files" section.
 
 * You'll want to [add](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Staging-Modified-Files) then [commit](http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#Committing-Your-Changes) these changes with a message.
 
@@ -141,22 +140,22 @@ Take a look at `index.html` and `students/student_name.html` in the browser. You
 |origin |https://github.com/table-member's-github-name/deploy-on-day-1...git| (fetch) |
 |origin |https://github.com/table-member's-github-name/deploy-on-day-1...git| (push)  |
 
-#### Push Up Your Branch 
+#### Push Up Your Branch
 
-* Now it's time to [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to a remote branch. This remote branch doesn't exist yet, you're going to create it by pushing. 
+* Now it's time to [push](http://git-scm.com/book/en/Git-Basics-Working-with-Remotes#Pushing-to-Your-Remotes) to a remote branch. This remote branch doesn't exist yet, you're going to create it by pushing.
   * **NOTE: Do not push to master. Do not type anything that contains the word master!**
   * You're going to push to a branch that is the same name as your local branch.
     * For instance, if we're on the branch zoe-perez, we're going to push to zoe-perez.
 
 * To confirm this push worked you can do two things:
-  * Type ```git branch -a``` which will show the remote branch on github.com you just created when you pushed. 
+  * Type ```git branch -a``` which will show the remote branch on github.com you just created when you pushed.
   * You could also go to the url of the forked repo. Notice the section that looks like ![branches](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/branches.png). You should be able to click on that arrow and to see a dropdown. From this dropdown, select the name of the branch you've been working on.
 
 ## Next Steps
 
 ### Group Logistics
 
-Since your table is going to submit a pull request with all of your tables profiles, you'll need to merge every branch that your table created into a single branch. This branch will contain every profile from your table. The process of merging these branches will probably result in merge conflicts in `index.html` and possibly elsewhere. That's totally okay and expected!
+Since your table is going to be deploying a single web page with all of your tables profiles, you'll need to merge every branch that your table created into a single branch. This branch will contain every profile from your table. The process of merging these branches may result in merge conflicts in `index.html` and possibly elsewhere. That's totally okay and expected!
 
 Think about the best way to merge all the branches together. Should one person do it? Should everyone do it in order? Should you merge into a prexisting branch, like `master`, or create a totally new branch? You might be wondering what the best answer is but there isn't a "best answer", just decide on a strategy and go for it!
 
@@ -183,21 +182,24 @@ other content here
 >>>>>>> zoe-perez
 ```
 
-Just decide which one you want to keep or if you want to keep both. Then delete the parts you don't want and delete the `<<<<HEAD`, `======`, and `>>>>>` parts. 
+Just decide which one you want to keep or if you want to keep both. Then delete the parts you don't want and delete the `<<<<HEAD`, `======`, and `>>>>>` parts.  In the process of trying to merge two files, you may notice that chunks of html end up in the wrong place on the page, and there is a chance you may need to move things around to be in the proper order again.  If you'd like a visual reference of what your index page looks like, you can also run `open index.html` from your command line, in order to view the current state of your page in the browser.  
 
 Remember, if you have multiple files with merge conflicts, you'll have to repeat this process with each file. Once you're done selecting which code to retain, `git add` and `git commit` these changes. Now when you type `git status`, your terminal should not display "You have unmerged paths."
 
 ## Final Steps
 
-Once every profile is on a single branch that is hosted remotely, it's time to submit a pull request on the original repo. Note: This pull request will be on behalf of your entire table.
+Once every profile is on a single branch that is hosted remotely, it's time to deploy your table's profile page!  This will look like the sample link at the top of this lesson, but with the cards/profiles for your group only.
 
-* The first step is to go to the forked repo. 
-* The next step is to navigate to the branch with all three or four profiles. You can do this by clicking on the ![branches](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/branches.png) dropdown and select the name of the branch that has all the profiles. 
-* From this new view, click on ![pull request](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/pull-request.png) on the right-hand menu. The green button with two arrows that looks like this ![green pull request](http://ironboard-curriculum-content.s3.amazonaws.com/web-development/deploy-on-day-1/green-button.png) will also work.
-* On this new page, click the green button that says "New pull request". This will take you to a form.
-Fill out the form and click "Submit".
+ - In your browser, navigate to the main github repo for your table.  
+ - At the top of the page, click on the `Settings` tab (the one with the gear symbol)
+ - Once on the Settings page, scroll down to the `GitHub Pages` section
+ - Under "Source," choose "master branch" and click "Save."
+ - Navigate to ` http://username.github.io/repository_name`, and have a look at your page!
 
-Congratulations, you've completed your first assignment! 
+ When you have fixed any errors and are ready to share, post your link in Slack so the rest of the class can read who you are!
+
+
+Congratulations, you've completed your first assignment!
 
 Note: From now on, most assignments will be completed in a group but submitted individually. This means that instead of having a **table** fork an assignment, **each student** will fork the assignment, minimizing the merge conflicts you'll encounter in the future.
 
@@ -218,6 +220,8 @@ Note: From now on, most assignments will be completed in a group but submitted i
   * [Git Rebase Workflow Explained](http://mettadore.com/analysis/a-simple-git-rebase-workflow-explained/)
   * [How GitHub uses GitHub to Build GitHub](http://zachholman.com/talk/how-github-uses-github-to-build-github)
   * [GitHub Workflow for Submitting Pull Requests](https://openshift.redhat.com/community/wiki/github-workflow-for-submitting-pull-requests)
+* Deploying to GitHub Pages
+    * [Documentation for how to deploy to GitHub Pages (choose "Project Site" rather than "User or Organization Site")](https://pages.github.com/)
 
 ## Issues
 
@@ -227,3 +231,5 @@ A common issue is not being able to authenticate with GitHub. You need to use HT
 * [HTTPS Cloning Errors](https://help.github.com/articles/https-cloning-errors)
 * [Setting Up SSH](https://help.github.com/articles/generating-ssh-keys)
 
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/deploy-on-day-1' title='Deploy on Day One'>Deploy on Day One</a> on Learn.co and start learning to code for free.</p>
